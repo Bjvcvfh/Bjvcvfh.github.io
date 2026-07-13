@@ -290,6 +290,7 @@
 
       .about-note,
       .skill-board,
+      .cert-card,
       .project,
       .contact-panel {
         border: 1px solid var(--line);
@@ -332,6 +333,29 @@
 
       .skill p {
         margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .certifications-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .cert-card {
+        padding: 20px;
+      }
+
+      .cert-card strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--navy);
+        font-size: 17px;
+      }
+
+      .cert-card span {
+        display: block;
         color: var(--muted);
         line-height: 1.55;
       }
@@ -549,6 +573,7 @@
 
         .hero-inner,
         .about-grid,
+        .certifications-grid,
         .projects-grid,
         .contact-panel {
           grid-template-columns: 1fr;
@@ -591,6 +616,7 @@
         </a>
         <div class="nav-links">
           <a href="#sobre">Sobre</a>
+          <a href="#certificacoes">Certificações</a>
           <a href="#projetos">Projetos</a>
           <a href="#experiencia">Experiência</a>
           <a href="#contato">Contato</a>
@@ -611,6 +637,7 @@
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projetos">Ver projetos</a>
               <a class="btn btn-ghost" href="https://github.com/Bjvcvfh" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/renan-ceolim-ramos-5b8a00208/" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="btn btn-ghost" href="mailto:renanceolim@gmail.com">Contato</a>
             </div>
           </div>
@@ -620,13 +647,13 @@
               <img class="avatar" src="https://avatars.githubusercontent.com/u/125842802?v=4" alt="Foto de Renan Ceolim Ramos" />
               <div>
                 <strong>Renan Ceolim Ramos</strong>
-                <span>Python, React, FastAPI, Electron</span>
+                <span>Analista de Dados | Python, BI e automação</span>
               </div>
             </div>
             <div class="metrics">
               <div class="metric">
-                <b>5+</b>
-                <span>projetos prontos para portfólio</span>
+                <b>10</b>
+                <span>certificações em dados e automação</span>
               </div>
               <div class="metric">
                 <b>Full</b>
@@ -686,6 +713,61 @@
                 <h3>Sistemas de apoio</h3>
                 <p>React, FastAPI, Electron e PySide6 para transformar análises em ferramentas de uso diário.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certificacoes">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Certificações</h2>
+            <p>
+              Formação complementar com foco em análise de dados, dashboards, Python, automação, banco de dados e
+              versionamento.
+            </p>
+          </div>
+
+          <div class="certifications-grid" aria-label="Certificações do LinkedIn">
+            <div class="cert-card">
+              <strong>Dashboards Interativos com Python</strong>
+              <span>Asimov Academy · dashboards e análise visual com Python.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Dash</strong>
+              <span>Asimov Academy · criação de aplicações e painéis interativos.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Análise e Visualização de Dados</strong>
+              <span>Asimov Academy · leitura, exploração e apresentação de dados.</span>
+            </div>
+            <div class="cert-card">
+              <strong>PostgreSQL</strong>
+              <span>Asimov Academy · consultas e fundamentos de banco de dados relacional.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Pandas</strong>
+              <span>Asimov Academy · tratamento, limpeza e análise de bases com Python.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Git/Github</strong>
+              <span>B7Web · versionamento, repositórios e controle de alterações.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Trilha Python Office</strong>
+              <span>Asimov Academy · automações e produtividade com Python.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Streamlit</strong>
+              <span>Asimov Academy · dashboards e aplicações de dados em Python.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Selenium</strong>
+              <span>Asimov Academy · automação de navegação e coleta de dados.</span>
+            </div>
+            <div class="cert-card">
+              <strong>Python Starter</strong>
+              <span>Asimov Academy · fundamentos de programação em Python.</span>
             </div>
           </div>
         </div>
@@ -898,6 +980,7 @@
             </div>
             <div class="contact-actions">
               <a href="mailto:renanceolim@gmail.com">Enviar e-mail</a>
+              <a href="https://www.linkedin.com/in/renan-ceolim-ramos-5b8a00208/" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="https://github.com/Bjvcvfh" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
