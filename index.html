@@ -291,6 +291,7 @@
       .about-note,
       .skill-board,
       .cert-card,
+      .tech-card,
       .project,
       .contact-panel {
         border: 1px solid var(--line);
@@ -362,6 +363,45 @@
         display: block;
         color: var(--muted);
         line-height: 1.55;
+      }
+
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .tech-card {
+        min-height: 108px;
+        padding: 16px 12px;
+        display: grid;
+        place-items: center;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .tech-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        display: grid;
+        place-items: center;
+        background: #f4f7fb;
+        color: var(--navy);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .tech-icon img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      .tech-card span {
+        color: #405164;
+        font-size: 13px;
+        font-weight: 800;
       }
 
       .projects-grid {
@@ -583,6 +623,10 @@
           grid-template-columns: 1fr;
         }
 
+        .tech-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
         .section-head {
           align-items: start;
           flex-direction: column;
@@ -597,6 +641,10 @@
         .metrics,
         .skill-board {
           grid-template-columns: 1fr;
+        }
+
+        .tech-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
         .timeline-item {
@@ -621,6 +669,7 @@
         <div class="nav-links">
           <a href="#sobre">Sobre</a>
           <a href="#certificacoes">Formação</a>
+          <a href="#tecnologias">Tecnologias</a>
           <a href="#projetos">Projetos</a>
           <a href="#experiencia">Experiência</a>
           <a href="#contato">Contato</a>
@@ -763,6 +812,105 @@
             <div class="cert-card">
               <strong>Streamlit</strong>
               <span>Asimov Academy · dashboards e aplicações de dados em Python.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="tecnologias">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Tecnologias</h2>
+            <p>
+              Ferramentas e bibliotecas usadas nos projetos de análise, automação, dashboards, sistemas web e aplicativos
+              internos.
+            </p>
+          </div>
+
+          <div class="tech-grid" aria-label="Tecnologias usadas nos projetos">
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/python/3776AB" alt="" /></div>
+              <span>Python</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/pandas/150458" alt="" /></div>
+              <span>Pandas</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="" /></div>
+              <span>React</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="" /></div>
+              <span>FastAPI</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/sqlite/003B57" alt="" /></div>
+              <span>SQLite</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="" /></div>
+              <span>Excel</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="" /></div>
+              <span>Next.js</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" /></div>
+              <span>TypeScript</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="" /></div>
+              <span>Tailwind</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="" /></div>
+              <span>Supabase</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/electron/47848F" alt="" /></div>
+              <span>Electron</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="" /></div>
+              <span>Node.js</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/git/F05032" alt="" /></div>
+              <span>Git</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/github/181717" alt="" /></div>
+              <span>GitHub</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" /></div>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon"><img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="" /></div>
+              <span>Streamlit</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">Qt</div>
+              <span>PySide6</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">CSV</div>
+              <span>CSV</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">XLS</div>
+              <span>OpenPyXL</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">EXE</div>
+              <span>PyInstaller</span>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon">SMTP</div>
+              <span>Nodemailer</span>
             </div>
           </div>
         </div>
